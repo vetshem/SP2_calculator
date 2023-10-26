@@ -14,3 +14,16 @@ int Calculator::Mul (double a, double b)
 {
     return a * b + 0.5;
 }
+double Calculator::Div (double a, double b)
+{
+    return a / b;
+}
+double Calculator::Pow(double a, double b)
+{
+    double result = 1.0;
+    for (int i = 0; i < b; i++)
+    {
+        result *= a;
+    }
+    return result;
+}
